@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ddc3ee268a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Sanne Peters Plus Week 5 Homework</title>
+  </head>
+  <body>
+    <!--wireframe: https://sanne272220.invisionapp.com/freehand/weather-app-iB2cjN0Lh-->
+
+    <div class="container">
+      <div class="border shadow p-5 mt-3 mb-5 bg-white rounded">
+        <form id="search-form">
+          <div class="row">
+            <div class="col-8">
+              <input
+                class="form-control"
+                type="text"
+                autocomplete="off"
+                autofocus="on"
+                placeholder="Search for a city"
+                aria-label="Search for a city"
+                id="search-text-input"
+              />
+            </div>
+            <div class="col-2">
+              <button
+                type="submit"
+                id="searchcity-button"
+                class="form-control btn btn-primary shadow-sm"
+              >
+                search
+              </button>
+              <!--<input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />-->
+            </div>
+            <div class="col-2">
+              <button
+                type="submit"
+                id="searchcurrentcity-button"
+                class="btn btn-success w-100"
+              >
+                current
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-12">
+            <h1 id="city-name">
+              Sydney NSW, Australia
+            </h1>
+            <h2 id="date">
+              Sat 03:00
+            </h2>
+            <p class="todays-description" id="todays-description">Clear</p>
+          </div>
+        </div>
+
+        <div class="row todays-temperature">
+          <div class="col-2">
+            <img src="img/icons_sunny.svg" class="todays-weather-icon" />
+          </div>
+          <div class="col-5">
+            <h3>
+              <span class="temperature" id="current-temperature">9</span>
+              <!--<span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>-->
+            </h3>
+          </div>
+
+          <div class="col-5 text">
+            <div class="col-12">
+              Feels like: <span id="feels-like">14</span>°C
+            </div>
+            <div class="col-12">Humidity: <span id="hum">41</span>%</div>
+            <div class="col-12">Wind: <span id="wind">10</span> km/h</div>
+          </div>
+        </div>
+
+        <div class="row week">
+          <div class="col-2">
+            <p>Fri</p>
+            <img src="img/icons_sunny.svg" alt="" class="weather-icons" />
+            <p>
+              <small><strong>24°</strong> / 12° C</small>
+            </p>
+          </div>
+          <div class="col-2">
+            <p>Sat</p>
+            <img src="img/icons_sunny.svg" alt="" class="weather-icons" />
+            <p>
+              <small><strong>21°</strong> / 9° C</small>
+            </p>
+          </div>
+          <div class="col-2">
+            <p>Sun</p>
+            <img src="img/icons_sunny-cloud.svg" alt="" class="weather-icons" />
+            <p>
+              <small><strong>19°</strong> / 11° C</small>
+            </p>
+          </div>
+          <div class="col-2">
+            <p>Mon</p>
+            <img src="img/icons_rain-heavy.svg" alt="" class="weather-icons" />
+            <p>
+              <small><strong>21°</strong> / 12° C</small>
+            </p>
+          </div>
+          <div class="col-2">
+            <p>Tue</p>
+            <img src="img/icons_rain-heavy.svg" alt="" class="weather-icons" />
+            <p>
+              <small><strong>20°</strong> / 13° C</small>
+            </p>
+          </div>
+          <div class="col-2">
+            <p>Wed</p>
+            <img src="img/icons_sunny.svg" alt="" class="weather-icons" />
+            <p>
+              <small><strong>19°</strong> / 14° C</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="footer">
+            Open-source code, by
+            <a href="https://www.sannepeters.com"
+              >Sanne Peters <i class="fas fa-graduation-cap"></i
+            ></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

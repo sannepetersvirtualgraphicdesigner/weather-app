@@ -1,0 +1,63 @@
+h1 {
+  font-size: 45px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+h3 {
+  font-size: 50px;
+  margin-left: 20px;
+}
+p {
+  font-family: "Cabin", sans-serif;
+}
+a {
+  color: grey;
+}
+a:hover {
+  color: #ffb631;
+  text-decoration: none;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.col-2 p {
+  margin-bottom: 0;
+}
+.container {
+  display: block;
+  margin: 25px auto 5px;
+}
+.form-control {
+  margin-bottom: 20px;
+}
+.todays-weather-icon {
+  width: 100px;
+}
+.row.todays-temperature {
+  margin-bottom: 40px;
+}
+.weather-icons {
+  width: 100%;
+}
+.row.week {
+  text-align: center;
+}
+.todays-description {
+  font-size: 120%;
+}
+.col-6.text {
+  margin-top: 10px;
+}
+.footer {
+  text-align: center;
+  top: 0;
+}
+.fa-graduation-cap {
+  font-size: 80%;
+}
+.todays-description {
+  text-transform: capitalize;
+}
